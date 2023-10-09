@@ -1,0 +1,100 @@
+body, html, h1, h2{
+    margin: 0;
+    padding: 0;
+}
+
+.turquoise{
+    background-color: rgb(50, 177, 164);
+}
+
+header, main, footer, .item{
+    margin-left: 20px;
+}
+
+.bandeaux_titre{
+    height: 120px;
+    width: 300px;
+}
+
+.bandeaux_corps{
+    height: auto;
+    width: 260px;
+    padding: 5px 20px;
+}
+
+.gras{
+    font-weight: bold;
+}
+
+.police_Gris{
+    color:rgb(103, 103, 103);
+    font-family: sans-serif;
+}
+
+.police_Blanc{
+    color:white;
+    font-family: sans-serif;
+}
+
+.police_Turquoise{
+    color:rgb(50, 177, 164);
+    font-family: sans-serif;
+}
+
+.Trait_Blanc{
+    background-color: white;
+    height: 5px;
+    width: 95%;
+}
+
+.Trait_Turquoise{
+    background-color:rgb(50, 177, 164);
+    height: 10px;
+    width: 98%;
+}
+
+main{
+    display: flex;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td{
+    padding-right: 40px;
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 20px;
+}
+
+.grille{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 800px) {
+    main{
+        display: block;
+    }
+    
+    .grille{
+        display:block
+    }
+
+    .bandeaux_corps{
+        height: auto;
+        width: auto;
+        padding: 5px 20px;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    .bandeaux_titre{
+        height: 120px;
+        width: auto;
+        margin-right: 20px;
+    }
+}
